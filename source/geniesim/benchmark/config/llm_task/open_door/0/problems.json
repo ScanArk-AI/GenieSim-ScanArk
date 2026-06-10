@@ -1,0 +1,23 @@
+{
+  "problem1": {
+    "Acts": [
+      {
+        "ActionList": [
+          {
+            "ActionSetWaitAny": [
+              {
+                "PushPull": "/World/objects/benchmark_door_000|0.05|1.5708|0"
+              },
+              {
+                "StepOut": 450
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Init": [],
+    "Objects": [],
+    "Problem": "open_door"
+  }
+}

@@ -1,0 +1,35 @@
+  app:
+    headless: false
+    physics_step: 120
+    rendering_step: 60
+    enable_curobo: false
+    reset_fallen: false
+    enable_ros: true
+    record_img: false
+    record_video: false
+    render_mode: "RaytracedLighting"
+    disable_physics: false
+    data_convert: false
+    enable_gpu_dynamics: false
+    enable_rate_limit: true
+    enable_playback: false
+  benchmark:
+    client_host: "localhost:50051"
+    num_episode: 1
+    task_name: "my_scene_vln_g2"
+    sub_task_name: "vln_navigate"
+    output_dir: "output"
+    fps: 30
+    record: false
+    infer_host: "localhost:8999"
+    model_arc: ""
+    enable_ros: true
+    interactive: true
+    seed: 7
+  scene:
+    scene_usd: "background/my_scene/sample.usdz"
+  robot:
+    robot_cfg: "G2_omnipicker.json"
+    robot_init_pose:
+      position: [-5.0, -2.0, 0.0]
+      quaternion: [1.0, 0.0, 0.0, 0.0]

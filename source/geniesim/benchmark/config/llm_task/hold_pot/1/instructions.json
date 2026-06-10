@@ -1,0 +1,8 @@
+{
+  "instructions": [
+    {
+      "instruction": "Grasp the two handles of the pot and place it on the stove"
+    }
+  ],
+  "task_id": "hold_pot"
+}

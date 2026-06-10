@@ -1,0 +1,9 @@
+{
+  "eval_type": "VLM",
+  "instructions": [
+    {
+      "instruction": "Straighten the Coca-Cola can on the table"
+    }
+  ],
+  "task_id": "straighten_object"
+}

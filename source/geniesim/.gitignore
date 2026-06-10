@@ -1,0 +1,4 @@
+assets/*
+!assets/.gitignore
+!assets/background/
+!assets/background/**

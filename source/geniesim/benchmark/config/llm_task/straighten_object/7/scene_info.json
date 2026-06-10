@@ -1,0 +1,311 @@
+{
+  "layout": {
+    "benchmark_beverage_bottle_2e6434de": {
+      "description": {
+        "color": "red",
+        "descriptive_terms": [
+          "cylindrical",
+          "red",
+          "liquid",
+          "bottled",
+          "packaged"
+        ],
+        "dimensions": [
+          0.06153380125761032,
+          0.14993929862976074,
+          0.06153379566967487
+        ],
+        "full_description": [
+          "A plastic bottle with a red label and black cap, containing dark liquid, featuring Chinese text and a Suntory logo."
+        ],
+        "materials": [
+          "plastic",
+          "liquid"
+        ],
+        "object_category": [
+          "container",
+          "beverage"
+        ],
+        "semantic_name": [
+          "beverage_bottle"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "oolong tea beverage",
+        "beverage",
+        "bottle",
+        "drink",
+        "right"
+      ],
+      "tags": [
+        "root_scene_091d3ce9",
+        "place_drinks_and_fruit_206ac1ed",
+        "benchmark_beverage_bottle_2e6434de"
+      ],
+      "usd": "benchmark_beverage_bottle_004",
+      "xyz": [
+        0.024,
+        -0.072,
+        0.865
+      ],
+      "xyzw": [
+        0.217383,
+        0.672863,
+        -0.672863,
+        -0.217383
+      ]
+    },
+    "benchmark_green_apple_1d901356": {
+      "description": {
+        "color": "green",
+        "descriptive_terms": [
+          "round",
+          "green",
+          "fresh",
+          "ripe",
+          "small"
+        ],
+        "dimensions": [
+          0.0708455890417099,
+          0.0702173262834549,
+          0.07104996591806412
+        ],
+        "full_description": [
+          "A shiny, light green apple with a short brown stem and smooth, rounded shape."
+        ],
+        "materials": [
+          "fruit flesh",
+          "skin"
+        ],
+        "object_category": [
+          "fruit",
+          "pome"
+        ],
+        "semantic_name": [
+          "green_apple"
+        ],
+        "shape": "spherical",
+        "unit": "m"
+      },
+      "keywords": [
+        "green apple",
+        "fruit",
+        "healthy",
+        "snack",
+        "left"
+      ],
+      "tags": [
+        "root_scene_091d3ce9",
+        "place_drinks_and_fruit_206ac1ed",
+        "benchmark_green_apple_1d901356"
+      ],
+      "usd": "benchmark_green_apple_001",
+      "xyz": [
+        -0.1,
+        0.095,
+        0.879
+      ],
+      "xyzw": [
+        0.542037,
+        -0.073561,
+        0.705378,
+        0.450805
+      ]
+    },
+    "iros_beverage_bottle_7a8f9544": {
+      "description": {
+        "color": "green",
+        "descriptive_terms": [
+          "cylindrical",
+          "green",
+          "metallic",
+          "printed",
+          "packaged"
+        ],
+        "dimensions": [
+          0.05535351671278477,
+          0.14131903648376465,
+          0.055531058460474014
+        ],
+        "full_description": [
+          "A green aluminum soda can with white Chinese characters and a silver pull-tab top."
+        ],
+        "materials": [
+          "metal",
+          "plastic"
+        ],
+        "object_category": [
+          "container",
+          "beverage"
+        ],
+        "semantic_name": [
+          "Sprite can"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "sprite",
+        "beverage",
+        "bottle",
+        "drink",
+        "left"
+      ],
+      "tags": [
+        "root_scene_091d3ce9",
+        "place_drinks_and_fruit_206ac1ed",
+        "iros_beverage_bottle_7a8f9544"
+      ],
+      "usd": "iros_beverage_bottle_001",
+      "xyz": [
+        0.141,
+        0.331,
+        0.865
+      ],
+      "xyzw": [
+        0.691719,
+        -0.146712,
+        0.146712,
+        -0.691719
+      ]
+    },
+    "table_6ebb3ddd": {
+      "description": {
+        "color": "white",
+        "descriptive_terms": [
+          "simple",
+          "modern",
+          "compact",
+          "stable",
+          "functional"
+        ],
+        "dimensions": [
+          0.1687,
+          0.0668,
+          0.0668
+        ],
+        "full_description": [
+          "A white rectangular table with a flat top and four slender legs, viewed from multiple angles."
+        ],
+        "materials": [
+          "plastic",
+          "metal"
+        ],
+        "object_category": [
+          "furniture",
+          "table"
+        ],
+        "semantic_name": [
+          "table"
+        ],
+        "shape": "rectangular",
+        "unit": "m"
+      },
+      "keywords": [
+        "minimalist_table",
+        "white",
+        "furniture",
+        "center"
+      ],
+      "tags": [
+        "root_scene_091d3ce9",
+        "place_drinks_and_fruit_206ac1ed",
+        "table_6ebb3ddd"
+      ],
+      "usd": "table_000",
+      "xyz": [
+        0.0,
+        0.0,
+        0.365
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "relations": {
+    "graph": {
+      "directed": true,
+      "graph": {
+        "rankdir": "LR"
+      },
+      "links": [
+        {
+          "source": "root_scene_091d3ce9",
+          "target": "place_drinks_and_fruit_206ac1ed"
+        },
+        {
+          "source": "place_drinks_and_fruit_206ac1ed",
+          "target": "table_6ebb3ddd"
+        },
+        {
+          "source": "place_drinks_and_fruit_206ac1ed",
+          "target": "iros_beverage_bottle_7a8f9544"
+        },
+        {
+          "source": "place_drinks_and_fruit_206ac1ed",
+          "target": "benchmark_beverage_bottle_2e6434de"
+        },
+        {
+          "source": "place_drinks_and_fruit_206ac1ed",
+          "target": "benchmark_green_apple_1d901356"
+        }
+      ],
+      "multigraph": false,
+      "nodes": [
+        {
+          "id": "root_scene_091d3ce9"
+        },
+        {
+          "id": "place_drinks_and_fruit_206ac1ed"
+        },
+        {
+          "id": "table_6ebb3ddd",
+          "tags": [
+            "minimalist_table",
+            "white",
+            "furniture",
+            "center"
+          ]
+        },
+        {
+          "id": "iros_beverage_bottle_7a8f9544",
+          "tags": [
+            "sprite",
+            "beverage",
+            "bottle",
+            "drink",
+            "left"
+          ]
+        },
+        {
+          "id": "benchmark_beverage_bottle_2e6434de",
+          "tags": [
+            "oolong tea beverage",
+            "beverage",
+            "bottle",
+            "drink",
+            "right"
+          ]
+        },
+        {
+          "id": "benchmark_green_apple_1d901356",
+          "tags": [
+            "green apple",
+            "fruit",
+            "healthy",
+            "snack",
+            "left"
+          ]
+        }
+      ]
+    }
+  },
+  "scene_id": "place_drinks_and_fruit",
+  "seed": 1680736929
+}

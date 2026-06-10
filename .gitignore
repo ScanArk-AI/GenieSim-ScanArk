@@ -1,0 +1,56 @@
+build/
+build_/
+saved_task/*
+saved_task/
+/assets/
+/assets
+**/*/data/
+**/__pycache__
+*.pyc
+*.tmp
+*.tmp/
+output/
+record*/
+*.hdf5
+*.tar
+*.tar.gz
+*.zip
+*.7z
+3rdparty
+!3rdparty/**
+.vscode/*
+checkpoint
+checkpoints
+source/geniesim/app/robot_cfg/*_recording.json
+default.etcd
+python3*INFO*
+*.INFO*
+release_pkg
+# ROS
+build/
+install/
+log/
+logs/
+logs
+.cache/
+.cache
+
+# Local generated course data not pushed to GitHub
+data/
+
+# Track source/geniesim/assets/background, but keep other large asset packs local.
+source/geniesim/assets/*
+!source/geniesim/assets/.gitignore
+!source/geniesim/assets/background/
+!source/geniesim/assets/background/**
+
+StreamVLN/checkpoints/
+StreamVLN/**/__pycache__/
+
+# StreamVLN local heavy/generated files
+StreamVLN/.git.backup/
+StreamVLN/.git/
+StreamVLN/checkpoints/
+StreamVLN/runs/
+StreamVLN/**/__pycache__/
+StreamVLN/**/*.pyc

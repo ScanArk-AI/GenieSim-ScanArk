@@ -1,0 +1,8 @@
+{
+  "instructions": [
+    {
+      "instruction": "Turn the doorknob and push the door"
+    }
+  ],
+  "task_id": "open_door"
+}

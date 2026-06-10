@@ -1,0 +1,10 @@
+open3d
+opencv-python
+plyfile
+tqdm
+pillow
+imageio
+imageio-ffmpeg
+py360convert
+scikit-learn
+scikit-learn-intelex

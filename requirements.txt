@@ -1,0 +1,11 @@
+colorama
+cv-bridge
+future
+grasp_nms
+msgpack
+open3d
+openai
+pyyaml
+ruckig
+shapely
+trimesh

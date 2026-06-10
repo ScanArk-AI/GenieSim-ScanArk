@@ -1,0 +1,87 @@
+# HOWTO use this
+# $ docker build -f ./scripts/dockerfile -t registry.agibot.com/genie-sim/open_source:latest .
+
+FROM nvcr.io/nvidia/isaac-sim:5.1.0
+
+ENV ACCEPT_EULA=Y
+ENV PRIVACY_CONSENT=Y
+ENV DEBIAN_FRONTEND=noninteractive
+
+# sys
+USER root
+RUN apt-get update && apt-get install -y \
+    bash \
+    wget \
+    curl \
+    git \
+    git-lfs \
+    sudo \
+    lsb-release \
+    unzip \
+    xterm \
+    build-essential \
+    cmake \
+    libeigen3-dev \
+    ffmpeg \
+    jq \
+    vim \
+    acl \
+    python3 python3-pip python3-venv \
+    libvulkan1 vulkan-tools \
+    libx11-6 libxrandr2 libxss1 libxcursor1 libxi6 libglu1-mesa \
+    libgl1 libegl1 libnss3 libxcomposite1 libxdamage1 libxext6 \
+    liburing2 liburing-dev
+
+RUN usermod -aG sudo isaac-sim
+RUN echo "isaac-sim ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/isaac-sim && chmod 0440 /etc/sudoers.d/isaac-sim
+USER 1234:1234
+
+
+# install jazzy-ros, https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+RUN locale  # check for UTF-8
+RUN sudo apt-get update && sudo apt-get install locales
+RUN sudo locale-gen en_US en_US.UTF-8
+RUN sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+RUN export LANG=en_US.UTF-8
+RUN locale  # verify settings
+
+RUN sudo apt-get install -y software-properties-common
+RUN sudo add-apt-repository universe -y
+RUN curl -L -o /tmp/ros2-apt-source.deb "https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.1.0/ros2-apt-source_1.1.0.noble_all.deb"
+RUN sudo dpkg -i /tmp/ros2-apt-source.deb
+
+RUN sudo apt-get update
+RUN sudo apt-get install -y ros-jazzy-desktop
+RUN sudo apt-get install -y ros-jazzy-rmw-cyclonedds-cpp
+RUN sudo apt-get install -y ros-jazzy-vision-msgs-rviz-plugins ros-jazzy-joy
+RUN sudo apt-get install -y ros-dev-tools
+RUN sudo apt-get install -y graphviz libgraphviz-dev
+
+# pip install benchmark deps for omni_python, remove -i if it's not needed
+COPY ./requirements.txt /tmp
+RUN /isaac-sim/python.sh -m pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN /isaac-sim/python.sh -m pip install -r /tmp/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+RUN sudo mkdir /geniesim && sudo chown 1234:1234 /geniesim
+
+# create generator venv
+COPY ./source/geniesim/generator/requirements.txt /tmp/requirements.generator.txt
+RUN python3 -m venv /geniesim/generator_env
+RUN /geniesim/generator_env/bin/pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN /geniesim/generator_env/bin/pip install -r /tmp/requirements.generator.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# create record venv
+RUN python3 -m venv /geniesim/record_env
+RUN /geniesim/record_env/bin/pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN /geniesim/record_env/bin/pip install rosbags pyyaml opencv-python rosbags.image "numpy<2.0" -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+#create teleop venv
+COPY ./source/teleop/requirements.txt /tmp/requirements.teleop.txt
+RUN python3 -m venv /geniesim/teleop_env
+RUN /geniesim/teleop_env/bin/pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN /geniesim/teleop_env/bin/pip install -r /tmp/requirements.teleop.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+RUN sudo rm -rf /var/lib/apt/lists/*
+
+CMD ["bash"]

@@ -1,0 +1,12 @@
+strict digraph "" {
+	graph [rankdir=LR];
+	root_scene_4f5c4d79 -> place_drinks_and_fruit_b66ad8d2;
+	table_464cf59e	[tags="['minimalist_table', 'white', 'furniture', 'center']"];
+	place_drinks_and_fruit_b66ad8d2 -> table_464cf59e;
+	benchmark_beverage_bottle_590f7fcc	[tags="['fanta', 'beverage', 'bottle', 'drink', 'left']"];
+	place_drinks_and_fruit_b66ad8d2 -> benchmark_beverage_bottle_590f7fcc;
+	benchmark_beverage_bottle_070fd17f	[tags="['coke cola', 'beverage', 'bottle', 'drink', 'left']"];
+	place_drinks_and_fruit_b66ad8d2 -> benchmark_beverage_bottle_070fd17f;
+	benchmark_green_apple_a1bc5628	[tags="['green apple', 'fruit', 'healthy', 'snack', 'right']"];
+	place_drinks_and_fruit_b66ad8d2 -> benchmark_green_apple_a1bc5628;
+}

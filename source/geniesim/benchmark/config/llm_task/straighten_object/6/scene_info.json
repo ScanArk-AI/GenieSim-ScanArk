@@ -1,0 +1,312 @@
+{
+  "layout": {
+    "benchmark_beverage_bottle_5b2c68bb": {
+      "description": {
+        "color": "orange",
+        "descriptive_terms": [
+          "cylindrical",
+          "orange",
+          "metallic",
+          "printed",
+          "beverage"
+        ],
+        "dimensions": [
+          0.06648768615722657,
+          0.1158542938232422,
+          0.06647872543334961
+        ],
+        "full_description": [
+          "An orange aluminum soda can with a silver top and bottom, featuring the Fanta logo and branding."
+        ],
+        "materials": [
+          "aluminum",
+          "plastic",
+          "printed label"
+        ],
+        "object_category": [
+          "container",
+          "beverage can"
+        ],
+        "semantic_name": [
+          "can"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "fanta",
+        "beverage",
+        "bottle",
+        "drink",
+        "right"
+      ],
+      "tags": [
+        "root_scene_e6174c8a",
+        "place_drinks_and_fruit_7f1ddf96",
+        "benchmark_beverage_bottle_5b2c68bb"
+      ],
+      "usd": "benchmark_beverage_bottle_003",
+      "xyz": [
+        0.146,
+        -0.275,
+        0.865
+      ],
+      "xyzw": [
+        0.436899,
+        0.555985,
+        -0.555985,
+        -0.436899
+      ]
+    },
+    "benchmark_peach_38d3c3f0": {
+      "description": {
+        "color": "colorful",
+        "descriptive_terms": [
+          "round",
+          "ripe",
+          "juicy",
+          "fuzzy",
+          "organic"
+        ],
+        "dimensions": [
+          0.0926,
+          0.0916,
+          0.0869
+        ],
+        "full_description": [
+          "A round, fuzzy peach with a gradient of red and yellow skin."
+        ],
+        "materials": [
+          "flesh",
+          "skin"
+        ],
+        "object_category": [
+          "fruit",
+          "stone fruit"
+        ],
+        "semantic_name": [
+          "peach"
+        ],
+        "shape": "complex-shaped",
+        "unit": "m"
+      },
+      "keywords": [
+        "peach",
+        "fruit",
+        "healthy",
+        "snack",
+        "left"
+      ],
+      "tags": [
+        "root_scene_e6174c8a",
+        "place_drinks_and_fruit_7f1ddf96",
+        "benchmark_peach_38d3c3f0"
+      ],
+      "usd": "benchmark_peach_021",
+      "xyz": [
+        -0.214,
+        0.02,
+        0.825
+      ],
+      "xyzw": [
+        0.455973,
+        0.853806,
+        -0.141745,
+        0.207392
+      ]
+    },
+    "iros_beverage_bottle_49dd8b25": {
+      "description": {
+        "color": "green",
+        "descriptive_terms": [
+          "cylindrical",
+          "green",
+          "metallic",
+          "printed",
+          "packaged"
+        ],
+        "dimensions": [
+          0.05535351671278477,
+          0.14131903648376465,
+          0.055531058460474014
+        ],
+        "full_description": [
+          "A green aluminum soda can with white Chinese characters and a silver pull-tab top."
+        ],
+        "materials": [
+          "metal",
+          "plastic"
+        ],
+        "object_category": [
+          "container",
+          "beverage"
+        ],
+        "semantic_name": [
+          "Sprite can"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "sprite",
+        "beverage",
+        "bottle",
+        "drink",
+        "right"
+      ],
+      "tags": [
+        "root_scene_e6174c8a",
+        "place_drinks_and_fruit_7f1ddf96",
+        "iros_beverage_bottle_49dd8b25"
+      ],
+      "usd": "iros_beverage_bottle_001",
+      "xyz": [
+        -0.055,
+        -0.171,
+        0.865
+      ],
+      "xyzw": [
+        0.581311,
+        0.402589,
+        -0.402589,
+        -0.581311
+      ]
+    },
+    "table_035930b8": {
+      "description": {
+        "color": "white",
+        "descriptive_terms": [
+          "simple",
+          "modern",
+          "compact",
+          "stable",
+          "functional"
+        ],
+        "dimensions": [
+          0.1687,
+          0.0668,
+          0.0668
+        ],
+        "full_description": [
+          "A white rectangular table with a flat top and four slender legs, viewed from multiple angles."
+        ],
+        "materials": [
+          "plastic",
+          "metal"
+        ],
+        "object_category": [
+          "furniture",
+          "table"
+        ],
+        "semantic_name": [
+          "table"
+        ],
+        "shape": "rectangular",
+        "unit": "m"
+      },
+      "keywords": [
+        "minimalist_table",
+        "white",
+        "furniture",
+        "center"
+      ],
+      "tags": [
+        "root_scene_e6174c8a",
+        "place_drinks_and_fruit_7f1ddf96",
+        "table_035930b8"
+      ],
+      "usd": "table_000",
+      "xyz": [
+        0.0,
+        0.0,
+        0.365
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "relations": {
+    "graph": {
+      "directed": true,
+      "graph": {
+        "rankdir": "LR"
+      },
+      "links": [
+        {
+          "source": "root_scene_e6174c8a",
+          "target": "place_drinks_and_fruit_7f1ddf96"
+        },
+        {
+          "source": "place_drinks_and_fruit_7f1ddf96",
+          "target": "table_035930b8"
+        },
+        {
+          "source": "place_drinks_and_fruit_7f1ddf96",
+          "target": "benchmark_beverage_bottle_5b2c68bb"
+        },
+        {
+          "source": "place_drinks_and_fruit_7f1ddf96",
+          "target": "iros_beverage_bottle_49dd8b25"
+        },
+        {
+          "source": "place_drinks_and_fruit_7f1ddf96",
+          "target": "benchmark_peach_38d3c3f0"
+        }
+      ],
+      "multigraph": false,
+      "nodes": [
+        {
+          "id": "root_scene_e6174c8a"
+        },
+        {
+          "id": "place_drinks_and_fruit_7f1ddf96"
+        },
+        {
+          "id": "table_035930b8",
+          "tags": [
+            "minimalist_table",
+            "white",
+            "furniture",
+            "center"
+          ]
+        },
+        {
+          "id": "benchmark_beverage_bottle_5b2c68bb",
+          "tags": [
+            "fanta",
+            "beverage",
+            "bottle",
+            "drink",
+            "right"
+          ]
+        },
+        {
+          "id": "iros_beverage_bottle_49dd8b25",
+          "tags": [
+            "sprite",
+            "beverage",
+            "bottle",
+            "drink",
+            "right"
+          ]
+        },
+        {
+          "id": "benchmark_peach_38d3c3f0",
+          "tags": [
+            "peach",
+            "fruit",
+            "healthy",
+            "snack",
+            "left"
+          ]
+        }
+      ]
+    }
+  },
+  "scene_id": "place_drinks_and_fruit",
+  "seed": 3037847105
+}

@@ -1,0 +1,311 @@
+{
+  "layout": {
+    "benchmark_beverage_bottle_4c1da813": {
+      "description": {
+        "color": "red",
+        "descriptive_terms": [
+          "cylindrical",
+          "red",
+          "liquid",
+          "bottled",
+          "packaged"
+        ],
+        "dimensions": [
+          0.06153380125761032,
+          0.14993929862976074,
+          0.06153379566967487
+        ],
+        "full_description": [
+          "A plastic bottle with a red label and black cap, containing dark liquid, featuring Chinese text and a Suntory logo."
+        ],
+        "materials": [
+          "plastic",
+          "liquid"
+        ],
+        "object_category": [
+          "container",
+          "beverage"
+        ],
+        "semantic_name": [
+          "beverage_bottle"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "oolong tea beverage",
+        "beverage",
+        "bottle",
+        "drink",
+        "right"
+      ],
+      "tags": [
+        "root_scene_19b96b1f",
+        "place_drinks_and_fruit_988da201",
+        "benchmark_beverage_bottle_4c1da813"
+      ],
+      "usd": "benchmark_beverage_bottle_004",
+      "xyz": [
+        -0.164,
+        -0.163,
+        0.865
+      ],
+      "xyzw": [
+        -0.191564,
+        0.680664,
+        -0.680664,
+        0.191564
+      ]
+    },
+    "benchmark_peach_f7a5ccf7": {
+      "description": {
+        "color": "colorful",
+        "descriptive_terms": [
+          "round",
+          "ripe",
+          "juicy",
+          "fuzzy",
+          "organic"
+        ],
+        "dimensions": [
+          0.0926,
+          0.0916,
+          0.0869
+        ],
+        "full_description": [
+          "A round, fuzzy peach with a gradient of red and yellow skin."
+        ],
+        "materials": [
+          "flesh",
+          "skin"
+        ],
+        "object_category": [
+          "fruit",
+          "stone fruit"
+        ],
+        "semantic_name": [
+          "peach"
+        ],
+        "shape": "complex-shaped",
+        "unit": "m"
+      },
+      "keywords": [
+        "peach",
+        "fruit",
+        "healthy",
+        "snack",
+        "left"
+      ],
+      "tags": [
+        "root_scene_19b96b1f",
+        "place_drinks_and_fruit_988da201",
+        "benchmark_peach_f7a5ccf7"
+      ],
+      "usd": "benchmark_peach_021",
+      "xyz": [
+        -0.094,
+        0.176,
+        0.884
+      ],
+      "xyzw": [
+        0.440466,
+        -0.321987,
+        0.650483,
+        0.52838
+      ]
+    },
+    "iros_beverage_bottle_6da2dc00": {
+      "description": {
+        "color": "green",
+        "descriptive_terms": [
+          "cylindrical",
+          "green",
+          "metallic",
+          "printed",
+          "packaged"
+        ],
+        "dimensions": [
+          0.05535351671278477,
+          0.14131903648376465,
+          0.055531058460474014
+        ],
+        "full_description": [
+          "A green aluminum soda can with white Chinese characters and a silver pull-tab top."
+        ],
+        "materials": [
+          "metal",
+          "plastic"
+        ],
+        "object_category": [
+          "container",
+          "beverage"
+        ],
+        "semantic_name": [
+          "Sprite can"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "sprite",
+        "beverage",
+        "bottle",
+        "drink",
+        "left"
+      ],
+      "tags": [
+        "root_scene_19b96b1f",
+        "place_drinks_and_fruit_988da201",
+        "iros_beverage_bottle_6da2dc00"
+      ],
+      "usd": "iros_beverage_bottle_001",
+      "xyz": [
+        -0.039,
+        0.249,
+        0.865
+      ],
+      "xyzw": [
+        0.545989,
+        0.449328,
+        -0.449328,
+        -0.545989
+      ]
+    },
+    "table_5c3cfb49": {
+      "description": {
+        "color": "white",
+        "descriptive_terms": [
+          "simple",
+          "modern",
+          "compact",
+          "stable",
+          "functional"
+        ],
+        "dimensions": [
+          0.1687,
+          0.0668,
+          0.0668
+        ],
+        "full_description": [
+          "A white rectangular table with a flat top and four slender legs, viewed from multiple angles."
+        ],
+        "materials": [
+          "plastic",
+          "metal"
+        ],
+        "object_category": [
+          "furniture",
+          "table"
+        ],
+        "semantic_name": [
+          "table"
+        ],
+        "shape": "rectangular",
+        "unit": "m"
+      },
+      "keywords": [
+        "minimalist_table",
+        "white",
+        "furniture",
+        "center"
+      ],
+      "tags": [
+        "root_scene_19b96b1f",
+        "place_drinks_and_fruit_988da201",
+        "table_5c3cfb49"
+      ],
+      "usd": "table_000",
+      "xyz": [
+        0.0,
+        0.0,
+        0.365
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "relations": {
+    "graph": {
+      "directed": true,
+      "graph": {
+        "rankdir": "LR"
+      },
+      "links": [
+        {
+          "source": "root_scene_19b96b1f",
+          "target": "place_drinks_and_fruit_988da201"
+        },
+        {
+          "source": "place_drinks_and_fruit_988da201",
+          "target": "table_5c3cfb49"
+        },
+        {
+          "source": "place_drinks_and_fruit_988da201",
+          "target": "benchmark_beverage_bottle_4c1da813"
+        },
+        {
+          "source": "place_drinks_and_fruit_988da201",
+          "target": "iros_beverage_bottle_6da2dc00"
+        },
+        {
+          "source": "place_drinks_and_fruit_988da201",
+          "target": "benchmark_peach_f7a5ccf7"
+        }
+      ],
+      "multigraph": false,
+      "nodes": [
+        {
+          "id": "root_scene_19b96b1f"
+        },
+        {
+          "id": "place_drinks_and_fruit_988da201"
+        },
+        {
+          "id": "table_5c3cfb49",
+          "tags": [
+            "minimalist_table",
+            "white",
+            "furniture",
+            "center"
+          ]
+        },
+        {
+          "id": "benchmark_beverage_bottle_4c1da813",
+          "tags": [
+            "oolong tea beverage",
+            "beverage",
+            "bottle",
+            "drink",
+            "right"
+          ]
+        },
+        {
+          "id": "iros_beverage_bottle_6da2dc00",
+          "tags": [
+            "sprite",
+            "beverage",
+            "bottle",
+            "drink",
+            "left"
+          ]
+        },
+        {
+          "id": "benchmark_peach_f7a5ccf7",
+          "tags": [
+            "peach",
+            "fruit",
+            "healthy",
+            "snack",
+            "left"
+          ]
+        }
+      ]
+    }
+  },
+  "scene_id": "place_drinks_and_fruit",
+  "seed": 3594187969
+}

@@ -1,0 +1,312 @@
+{
+  "layout": {
+    "benchmark_beverage_bottle_7f8df655": {
+      "description": {
+        "color": "orange",
+        "descriptive_terms": [
+          "cylindrical",
+          "orange",
+          "metallic",
+          "printed",
+          "beverage"
+        ],
+        "dimensions": [
+          0.06648768615722657,
+          0.1158542938232422,
+          0.06647872543334961
+        ],
+        "full_description": [
+          "An orange aluminum soda can with a silver top and bottom, featuring the Fanta logo and branding."
+        ],
+        "materials": [
+          "aluminum",
+          "plastic",
+          "printed label"
+        ],
+        "object_category": [
+          "container",
+          "beverage can"
+        ],
+        "semantic_name": [
+          "can"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "fanta",
+        "beverage",
+        "bottle",
+        "drink",
+        "left"
+      ],
+      "tags": [
+        "root_scene_a190e9ef",
+        "place_drinks_and_fruit_9ebf708e",
+        "benchmark_beverage_bottle_7f8df655"
+      ],
+      "usd": "benchmark_beverage_bottle_003",
+      "xyz": [
+        -0.145,
+        0.062,
+        0.865
+      ],
+      "xyzw": [
+        0.527751,
+        -0.470616,
+        0.470616,
+        -0.527751
+      ]
+    },
+    "benchmark_beverage_bottle_f132a86a": {
+      "description": {
+        "color": "red",
+        "descriptive_terms": [
+          "cylindrical",
+          "red",
+          "liquid",
+          "bottled",
+          "packaged"
+        ],
+        "dimensions": [
+          0.06153380125761032,
+          0.14993929862976074,
+          0.06153379566967487
+        ],
+        "full_description": [
+          "A plastic bottle with a red label and black cap, containing dark liquid, featuring Chinese text and a Suntory logo."
+        ],
+        "materials": [
+          "plastic",
+          "liquid"
+        ],
+        "object_category": [
+          "container",
+          "beverage"
+        ],
+        "semantic_name": [
+          "beverage_bottle"
+        ],
+        "shape": "cylindrical",
+        "unit": "m"
+      },
+      "keywords": [
+        "oolong tea beverage",
+        "beverage",
+        "bottle",
+        "drink",
+        "left"
+      ],
+      "tags": [
+        "root_scene_a190e9ef",
+        "place_drinks_and_fruit_9ebf708e",
+        "benchmark_beverage_bottle_f132a86a"
+      ],
+      "usd": "benchmark_beverage_bottle_004",
+      "xyz": [
+        0.098,
+        0.333,
+        0.865
+      ],
+      "xyzw": [
+        0.676913,
+        0.204422,
+        -0.204422,
+        -0.676913
+      ]
+    },
+    "benchmark_lemon_35153ae6": {
+      "description": {
+        "color": "yellow",
+        "descriptive_terms": [
+          "citrus",
+          "yellow",
+          "organic",
+          "fresh",
+          "juicy"
+        ],
+        "dimensions": [
+          0.0652875304222107,
+          0.08429359644651413,
+          0.06925402581691742
+        ],
+        "full_description": [
+          "A bright yellow, glossy, oval-shaped fruit with a small green stem nub."
+        ],
+        "materials": [
+          "fruit flesh",
+          "peel"
+        ],
+        "object_category": [
+          "food",
+          "citrus fruit"
+        ],
+        "semantic_name": [
+          "lemon"
+        ],
+        "shape": "irregular",
+        "unit": "m"
+      },
+      "keywords": [
+        "lemon",
+        "fruit",
+        "healthy",
+        "snack",
+        "left"
+      ],
+      "tags": [
+        "root_scene_a190e9ef",
+        "place_drinks_and_fruit_9ebf708e",
+        "benchmark_lemon_35153ae6"
+      ],
+      "usd": "benchmark_lemon_030",
+      "xyz": [
+        0.241,
+        0.083,
+        0.89
+      ],
+      "xyzw": [
+        0.352839,
+        0.277727,
+        0.889796,
+        -0.081462
+      ]
+    },
+    "table_3dded5db": {
+      "description": {
+        "color": "white",
+        "descriptive_terms": [
+          "simple",
+          "modern",
+          "compact",
+          "stable",
+          "functional"
+        ],
+        "dimensions": [
+          0.1687,
+          0.0668,
+          0.0668
+        ],
+        "full_description": [
+          "A white rectangular table with a flat top and four slender legs, viewed from multiple angles."
+        ],
+        "materials": [
+          "plastic",
+          "metal"
+        ],
+        "object_category": [
+          "furniture",
+          "table"
+        ],
+        "semantic_name": [
+          "table"
+        ],
+        "shape": "rectangular",
+        "unit": "m"
+      },
+      "keywords": [
+        "minimalist_table",
+        "white",
+        "furniture",
+        "center"
+      ],
+      "tags": [
+        "root_scene_a190e9ef",
+        "place_drinks_and_fruit_9ebf708e",
+        "table_3dded5db"
+      ],
+      "usd": "table_000",
+      "xyz": [
+        0.0,
+        0.0,
+        0.365
+      ],
+      "xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "relations": {
+    "graph": {
+      "directed": true,
+      "graph": {
+        "rankdir": "LR"
+      },
+      "links": [
+        {
+          "source": "root_scene_a190e9ef",
+          "target": "place_drinks_and_fruit_9ebf708e"
+        },
+        {
+          "source": "place_drinks_and_fruit_9ebf708e",
+          "target": "table_3dded5db"
+        },
+        {
+          "source": "place_drinks_and_fruit_9ebf708e",
+          "target": "benchmark_beverage_bottle_f132a86a"
+        },
+        {
+          "source": "place_drinks_and_fruit_9ebf708e",
+          "target": "benchmark_beverage_bottle_7f8df655"
+        },
+        {
+          "source": "place_drinks_and_fruit_9ebf708e",
+          "target": "benchmark_lemon_35153ae6"
+        }
+      ],
+      "multigraph": false,
+      "nodes": [
+        {
+          "id": "root_scene_a190e9ef"
+        },
+        {
+          "id": "place_drinks_and_fruit_9ebf708e"
+        },
+        {
+          "id": "table_3dded5db",
+          "tags": [
+            "minimalist_table",
+            "white",
+            "furniture",
+            "center"
+          ]
+        },
+        {
+          "id": "benchmark_beverage_bottle_f132a86a",
+          "tags": [
+            "oolong tea beverage",
+            "beverage",
+            "bottle",
+            "drink",
+            "left"
+          ]
+        },
+        {
+          "id": "benchmark_beverage_bottle_7f8df655",
+          "tags": [
+            "fanta",
+            "beverage",
+            "bottle",
+            "drink",
+            "left"
+          ]
+        },
+        {
+          "id": "benchmark_lemon_35153ae6",
+          "tags": [
+            "lemon",
+            "fruit",
+            "healthy",
+            "snack",
+            "left"
+          ]
+        }
+      ]
+    }
+  },
+  "scene_id": "place_drinks_and_fruit",
+  "seed": 2322357480
+}

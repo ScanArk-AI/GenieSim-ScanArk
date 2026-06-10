@@ -1,0 +1,12 @@
+strict digraph "" {
+	graph [rankdir=LR];
+	root_scene_e6174c8a -> place_drinks_and_fruit_7f1ddf96;
+	table_035930b8	[tags="['minimalist_table', 'white', 'furniture', 'center']"];
+	place_drinks_and_fruit_7f1ddf96 -> table_035930b8;
+	benchmark_beverage_bottle_5b2c68bb	[tags="['fanta', 'beverage', 'bottle', 'drink', 'right']"];
+	place_drinks_and_fruit_7f1ddf96 -> benchmark_beverage_bottle_5b2c68bb;
+	iros_beverage_bottle_49dd8b25	[tags="['sprite', 'beverage', 'bottle', 'drink', 'right']"];
+	place_drinks_and_fruit_7f1ddf96 -> iros_beverage_bottle_49dd8b25;
+	benchmark_peach_38d3c3f0	[tags="['peach', 'fruit', 'healthy', 'snack', 'left']"];
+	place_drinks_and_fruit_7f1ddf96 -> benchmark_peach_38d3c3f0;
+}

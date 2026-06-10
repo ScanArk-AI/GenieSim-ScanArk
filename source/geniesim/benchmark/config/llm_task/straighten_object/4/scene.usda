@@ -1,0 +1,52 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "World"
+{
+    def "Objects"
+    {
+        def Xform "table_464cf59e" (
+            prepend payload = @../../../../../assets/objects/edited/table_000/Aligned.usda@
+        )
+        {
+            quatf xformOp:orient = (1, 0, 0, 0)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0, 0, 0.365)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "benchmark_beverage_bottle_590f7fcc" (
+            prepend payload = @../../../../../assets/objects/benchmark/beverage_bottle/benchmark_beverage_bottle_003/Aligned.usda@
+        )
+        {
+            quatf xformOp:orient = (-0.405175, 0.405175, 0.579511, -0.579511)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.079, 0.226, 0.865)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "benchmark_beverage_bottle_070fd17f" (
+            prepend payload = @../../../../../assets/objects/benchmark/beverage_bottle/benchmark_beverage_bottle_001/Aligned.usda@
+        )
+        {
+            quatf xformOp:orient = (-0.540888, 0.540888, 0.455456, -0.455456)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-0.253, 0.067, 0.865)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+
+        def Xform "benchmark_green_apple_a1bc5628" (
+            prepend payload = @../../../../../assets/objects/benchmark/green_apple/benchmark_green_apple_001/Aligned.usda@
+        )
+        {
+            quatf xformOp:orient = (-0.34206, -0.423396, 0.831289, -0.112648)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (0.137, -0.315, 0.839)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+        }
+    }
+}

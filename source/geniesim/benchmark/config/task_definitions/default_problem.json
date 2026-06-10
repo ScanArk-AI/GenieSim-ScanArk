@@ -1,0 +1,18 @@
+{
+  "Acts": [
+    {
+      "ActionList": [
+        {
+          "ActionSetWaitAny": [
+            {
+              "Timeout": 1000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Init": [],
+  "Objects": [],
+  "Problem": "default_problem"
+}
