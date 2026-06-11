@@ -6,7 +6,7 @@
 
 ```text
 基础模型：/root/genie_sim/StreamVLN/checkpoints/streamvln_real_world
-LoRA adapter：/root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world
+LoRA adapter：/root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world
 视觉塔：/root/genie_sim/StreamVLN/checkpoints/siglip-so400m-patch14-384
 推理脚本：/root/genie_sim/StreamVLN/run_geniesim.py
 ```
@@ -16,7 +16,7 @@ LoRA adapter：/root/genie_sim/StreamVLN/checkpoints/course_classroom_target_fro
 确认 Stage 2 训练输出存在：
 
 ```bash
-ls -lh /root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world
+ls -lh /root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world
 ```
 
 通常应包含：
@@ -72,7 +72,7 @@ conda activate streamvln
 
 python run_geniesim.py \
   --model_path /root/genie_sim/StreamVLN/checkpoints/streamvln_real_world \
-  --adapter_path /root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world \
+  --adapter_path /root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world \
   --vision_tower_path /root/genie_sim/StreamVLN/checkpoints/siglip-so400m-patch14-384 \
   --attn_implementation flash_attention_2 \
   --device cuda:0 \
@@ -186,8 +186,8 @@ instruction
 确认：
 
 ```bash
-ls /root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world/adapter_config.json
-ls /root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world/non_lora_trainables.bin
+ls /root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world/adapter_config.json
+ls /root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world/non_lora_trainables.bin
 ```
 
 ### 模型一开始就 stop

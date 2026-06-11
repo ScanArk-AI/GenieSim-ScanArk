@@ -117,7 +117,7 @@ export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128
 清理旧输出：
 
 ```bash
-rm -rf /root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world
+rm -rf /root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world
 ```
 
 运行 4090 24GB 推荐 LoRA fine-tune：
@@ -147,7 +147,7 @@ python streamvln/streamvln_train.py \
   --image_grid_pinpoints "(1x1),...,(6x6)" \
   --bf16 True \
   --run_name course_classroom_target_from_streamvln_real_world \
-  --output_dir /root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world \
+  --output_dir /root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world \
   --num_train_epochs 1 \
   --per_device_train_batch_size 1 \
   --per_device_eval_batch_size 1 \
@@ -200,7 +200,7 @@ grad_norm: 非 0
 训练完成后输出目录为：
 
 ```text
-/root/genie_sim/StreamVLN/checkpoints/course_classroom_target_from_streamvln_real_world
+/root/gpufree-data/checkpoints/course_classroom_target_from_streamvln_real_world
 ```
 
 LoRA 训练输出通常包含：
