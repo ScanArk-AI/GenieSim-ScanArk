@@ -39,7 +39,7 @@ cd /root/genie_sim
 conda activate streamvln
 
 python course_tools/collect_streamvln_data.py \
-  --ply_path scenario/1stfloor_coffee.ply \
+  --ply_path scenario/sample.ply \
   --scene_name classroom \
   --output_dir data/course/classroom_target \
   --num_episodes 50
@@ -122,7 +122,7 @@ StreamVLN Data Collection Preview
 
 ```bash
 python course_tools/collect_streamvln_data.py \
-  --ply_path scenario/1stfloor.ply \
+  --ply_path scenario/sample.ply \
   --scene_name classroom \
   --output_dir /tmp/classroom_test \
   --num_episodes 2
