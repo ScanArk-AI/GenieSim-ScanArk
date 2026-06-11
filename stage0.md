@@ -1,3 +1,8 @@
+# 拉取最新代码
+cd /root/genie_sim
+git fetch origin
+git reset --hard origin/main
+
 # GenieSim VLN 启动与键盘控制说明
 
 本文档适用于当前服务器环境：打开终端后已经在 Docker 容器内部，提示符类似：
