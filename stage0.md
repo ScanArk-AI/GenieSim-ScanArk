@@ -1,5 +1,6 @@
 # 拉取最新代码
 cd /root/genie_sim
+git pull
 git fetch origin
 git reset --hard origin/main
 
